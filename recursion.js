@@ -14,7 +14,7 @@ function longest(words) {
 
 function everyOther(str) {
     if(!str.length) return '';
-    return !str.length%2? str[0] + everyOther(str.substring(2)): str[0] + everyOther(str.substring(2));
+    return str[0] + everyOther(str.substring(2));
 }
 
 /** isPalindrome: checks whether a string is a palindrome or not. */
